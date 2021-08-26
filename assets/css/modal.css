@@ -1,0 +1,167 @@
+/* modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    animation: fadeIn linear 0.1s;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+  
+}
+ 
+.modal__body {
+    --growth-form: 0.7;
+    --growth-to: 1;
+    margin: auto;
+    background-color: var(--while-color);
+    position: relative;
+    z-index: 1;
+    animation: growth linear 0.1s;
+
+}
+
+/* login */
+.auth-form {
+    width: 500px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: var(--while-color);
+}
+
+.auth-form__container {
+    padding: 0 32px;
+}
+
+.auth-form__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    margin-top: 10px;
+}
+
+.auth-form__heading {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--text-color);
+
+}
+
+.auth-form__switch-btn {
+    font-size: 1.6rem;
+    color:  var(--primary-color);
+    cursor: pointer;
+}
+
+
+
+.auth-form__input {
+    width: 100%;
+    height: 40px;
+    margin-top: 16px;
+    padding: 0 12px;
+    font-size: 1.4rem;
+    border-radius: 2px;
+    border: 1px solid  var(--boder-color);
+    outline: none;
+}
+
+.auth-form__input:focus {
+    border-color: #777;
+}
+
+.auth-form__aside {
+    margin-top: 20px;
+}
+
+.auth-form-text {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    padding: 0 12px;
+
+}
+
+.auth-form-link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.auth-form__controls {
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.auth-form__controls--back {
+    margin-right: 8px;
+}
+
+.auth-form__social {
+    margin-top: 28px;
+    background-color: #f5f5f5;
+    padding: 12px 36px;
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+
+.auth-form__social-icon {
+    font-size: 1.8rem;
+
+}
+
+.facebook {
+    background-color: #3a5a98;
+}
+
+.auth-form__social .facebook {
+  color:  var(--while-color);
+}
+.auth-form__social .google {
+     color: #666;
+}
+
+.auth-form__social-lable {
+    margin: 0 20px;
+}
+
+.google {
+    
+    background-color: var(--while-color);
+}
+
+/* đăng nhập */
+.auth-form__help {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.auth-form__help-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #939393;
+}
+
+.auth-form__help-space {
+    display: block;
+    height: 22px;
+    margin: -4px 16px 0;
+    border-left: 1px solid #eaeaea;
+
+}
+
+.auth-form__help-forgot {
+    color: var(--primary-color);
+}
